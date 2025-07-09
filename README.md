@@ -7,10 +7,11 @@ Automação de testes para a API REST do projeto [`banco-api`](https://github.co
 ## Stack Utilizada
 
 - **Linguagem:** JavaScript (Node.js)
-- **Framework de Testes:** [Mocha](https://mochajs.org/)
-- **Assertions:** [Chai](https://www.chaijs.com/)
-- **Requisições HTTP:** [Supertest](https://github.com/ladjs/supertest#readme)
-- **Relatórios:** [Mochawesome](https://www.npmjs.com/package/mochawesome)
+- **Framework de testes:** [Mocha](https://mochajs.org/)
+- **Biblioteca de asserções:** [Chai](https://www.chaijs.com/)
+- **Biblioteca de requisições HTTP:** [Supertest](https://github.com/ladjs/supertest#readme)
+- **Relatórios de testes:** [Mochawesome](https://www.npmjs.com/package/mochawesome)
+- **Gerenciamento de variávies de ambiente:** [dotenv](https://www.npmjs.com/package/dotenv)
 
 Para mais detalhes sobre cada biblioteca, consulte a seção [Documentação das Dependências](#documentação-das-dependências-utilizadas).
 
@@ -23,7 +24,9 @@ banco-api-tests/
 ├── fixtures/        # Dados e payloads para os testes
 ├── helpers/         # Funções auxiliares de suporte aos testes
 ├── test/            # Arquivos de teste automatizados
-├── .env       	  # Arquivo para configuração da variável BASE_URL
+    ├── login.test.js
+    ├── transferencia.test.js
+├── .env       	     # Arquivo para configuração da variável BASE_URL
 ├── .gitignore       # Ignora arquivos e pastas sensíveis
 ├── package.json     # Gerenciador de dependências e scripts
 ├── package-lock.json
@@ -82,17 +85,8 @@ Após executar os testes, um relatório em HTML será gerado no diretório `moch
 
 ## Documentação das Dependências Utilizadas
 
-- [Mocha](https://mochajs.org/) {target="_blank"} — Test runner   
-- [Chai](https://www.chaijs.com/) {target="_blank"} — Assertions  
-- [Supertest](https://github.com/ladjs/supertest#readme) {target="_blank"} — Testes HTTP/REST  
-- [Mochawesome](https://www.npmjs.com/package/mochawesome) {target="_blank"} — Relatórios de teste em HTML  
-
-## Contribuição
-
-Pull requests são bem-vindos! Para grandes mudanças, abra uma issue antes para discutir o que você gostaria de mudar.
-
----
-
-**Contatos:**  
-Para dúvidas, sugestões ou contribuições, utilize a área de [issues do repositório](https://github.com/brureis88/banco-api-tests/issues).
-```
+- [Mocha](https://mochajs.org/) — Test runner   
+- [Chai](https://www.chaijs.com/) — Assertions  
+- [Supertest](https://github.com/ladjs/supertest#readme) — Testes HTTP/REST  
+- [Mochawesome](https://www.npmjs.com/package/mochawesome) — Relatórios de teste em HTML
+- [dotenv](https://www.npmjs.com/package/dotenv) — Gerenciamento de variávies de ambiente
