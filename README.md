@@ -7,10 +7,11 @@ Automação de testes para a API REST do projeto [`banco-api`](https://github.co
 ## Stack Utilizada
 
 - **Linguagem:** JavaScript (Node.js)
-- **Framework de Testes:** [Mocha](https://mochajs.org/)
-- **Assertions:** [Chai](https://www.chaijs.com/)
-- **Requisições HTTP:** [Supertest](https://github.com/ladjs/supertest#readme)
-- **Relatórios:** [Mochawesome](https://www.npmjs.com/package/mochawesome)
+- **Framework de testes:** [Mocha](https://mochajs.org/)
+- **Biblioteca de asserções:** [Chai](https://www.chaijs.com/)
+- **Biblioteca de requisições HTTP:** [Supertest](https://github.com/ladjs/supertest#readme)
+- **Relatórios de testes:** [Mochawesome](https://www.npmjs.com/package/mochawesome)
+- **Gerenciamento de variávies de ambiente:** [dotenv](https://www.npmjs.com/package/dotenv)
 
 Para mais detalhes sobre cada biblioteca, consulte a seção [Documentação das Dependências](#documentação-das-dependências-utilizadas).
 
@@ -88,3 +89,4 @@ Após executar os testes, um relatório em HTML será gerado no diretório `moch
 - [Chai](https://www.chaijs.com/) — Assertions  
 - [Supertest](https://github.com/ladjs/supertest#readme) — Testes HTTP/REST  
 - [Mochawesome](https://www.npmjs.com/package/mochawesome) — Relatórios de teste em HTML
+- [dotenv](https://www.npmjs.com/package/dotenv) — Gerenciamento de variávies de ambiente
